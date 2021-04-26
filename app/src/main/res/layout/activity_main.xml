@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ET_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter The First Number "
+            android:layout_margin="11dp"
+            android:inputType="number"
+            android:textColorHint="@android:color/holo_red_dark"
+            />
+        <EditText
+            android:id="@+id/ET_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter The Second Number "
+            android:layout_margin="11dp"
+            android:inputType="number"
+            android:textColorHint="@android:color/holo_red_dark"
+            />
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result :"
+            android:layout_margin="11dp"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_Sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_Sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_Sum"
+        android:text="-"
+        android:textColor="@android:color/white"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Sum"
+        android:layout_alignParentRight="true"
+        android:text="*"
+        android:textColor="@android:color/white"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Sub"
+        android:text="/"
+        android:layout_toLeftOf="@+id/btn_multi"
+        android:textColor="@android:color/white"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        />
+
+
+
+</RelativeLayout>
